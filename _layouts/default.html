@@ -1,20 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="{{ site.author }}" />
+    <title>{{ page.title }} | {{ site.author }}</title>
 
-  {% include head.html %}
+    <!-- meta information -->
+    <meta name="author" content="{{site.name.en}} | {{site.name.cn}}"/>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <meta name="Description" content="{{site.name.en}}'s Personal Website and Blog">
+    <!-- icon -->
+    <link rel="icon" href="/logo.png" type="image/png">
+
+    <!-- feed -->
+    <link href="{{ site.url }}/feed/" rel="alternate" title="{{ site.author }}" type="application/atom+xml" />
+  <link rel="stylesheet" href="/media/css/style.css">
+  <link rel="stylesheet" href="/media/css/highlight.css">
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+  </head>
 
   <body>
+    <div id="container">
+      <div id="main" role="main">
+        <header>
+        <h1>{{ page.title }}</h1>
+        </header>
 
-    {% include header.html %}
+        <!-- Navigation Tabs-->
+        <nav>
+        <span><a title="home page" class="" href="{{ site.url }}/">home</a></span>
+        <span><a title="about" class="" href="{{ site.url }}/about/">about</a></span>
+        <span><a title="categories" class="" href="{{ site.url }}/categories/">categories</a></span>
+        <span><a title="tags" class="" href="{{ site.url }}/tags/">tags</a></span>
+        <span><a title="subscribe by RSS" class="" href="{{ site.url }}/feed/">subscribe</a></span>
+        </nav>
 
-    <div class="page-content">
-      <div class="wrapper">
+        <!-- Contents -->
+        <article class="content">
         {{ content }}
+        </article>
+
       </div>
     </div>
+    <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    {% include footer.html %}
-
+    ga('create', 'UA-56167472-1', 'auto');
+    ga('send', 'pageview');
+    </script>
   </body>
-
 </html>

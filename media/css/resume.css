@@ -1,0 +1,92 @@
+#experience, #course, #extra-curriculum {
+    text-align: center;
+    font-size: 18px;
+}
+
+p.resume-item-title {
+    padding: 0px 0px 0px 0px;
+}
+
+span.summary {
+    display: block;
+    line-height: 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+
+span.item-picture-summary-list, li.list-item{
+    display: block;
+    margin-top: 0px;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+span.item-picture-summary-list p.picture, p.textbook {
+    padding: 0px 0px 0px 0px;
+}
+span.item-picture-summary-list img {
+    width: 200px;
+    margin-right: 20px;
+}
+
+ul.resume-list {
+    list-style-type:disc;
+    height: 90px;
+}
+
+li.resume-list-item {
+    line-height: 16px;
+    margin: 5px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    list-style-position: outside;
+}
+
+p.resume-item-title span.title-link-text {
+    width: 320px;
+    display: inline-block;
+    align: center;
+}
+
+p.resume-item-title span.title-link-text-with-no-unlinked {
+    width: 400px;
+    display: inline-block;
+    align: center;
+}
+
+p.resume-item-title span.title-unlink-text {
+    width: 180px;
+    display: inline-block;
+    text-align: right;
+}
+
+p.resume-item-title time {
+    display: inline-block;
+    width: 125px;
+}
+
+/* for the course page */
+p.textbook img {
+    width: 130px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+span.course-description {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+span.course-description p {
+    padding: 0px;
+}
+
+li.course-item span.item-picture-summary-list {
+    display: none;
+}
+
+#chenlin-on-bike {
+    height:300px;
+}
